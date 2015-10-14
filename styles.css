@@ -1,0 +1,52 @@
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+
+.row{
+	margin-bottom: 20px;
+}
+
+.row div{
+	width: 150px;
+	height: 150px;
+
+	border: 1px solid red;
+}
+
+#row1 div{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+#row2 div{
+	float: left;
+	margin-right: 20px;
+}
+
+#row3{
+	position: relative;
+}
+
+#row3 div{
+	position: absolute;
+}
+
+#row3 .box2{
+	left: 172px;
+}
+
+#row3 .box3{
+	left: 344px;
+}
+
+
